@@ -1,0 +1,35 @@
+<!--
+  Generated template for the CorreiosPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>correios</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+
+        <ion-item>
+          <ion-label floating>Estado</ion-label>
+          <ion-input type="text" autofocus [(ngModel)]="Estado"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label floating>Cidade</ion-label>
+          <ion-input type="text" autofocus [(ngModel)]="Cidade"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Logradouro</ion-label>
+            <ion-input type="text" autofocus [(ngModel)]="Logradouro"></ion-input>
+          </ion-item>
+      
+      </ion-list>
+      <div padding>
+        <button ion-button color="primary" block (click)="exibeInputs()" >Localizar</button>
+      </div>
+</ion-content>
